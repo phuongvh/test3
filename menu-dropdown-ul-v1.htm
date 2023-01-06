@@ -1,0 +1,101 @@
+<title>Menu DropDown UL</title>
+<header>
+    <nav>
+        <ul>
+            <li><a href="#">Trang Chủ</a> |</li>
+            <li><a href="#">Sản Phẩm</a> |</li>
+            <li><a href="#">Thương Hiệu</a> |</li>
+            <li>
+                
+                    <button>Trang Khác &darr;</button>
+                    <div>
+                        <a href="#">Giới Thiệu</a>
+                        <a href="#">Liên Hệ</a>
+                        <a href="#">Tin Tức</a>
+                    </div>
+                
+            </li>
+        </ul>
+        
+    
+        <div class="dropdown">
+            <button class="dropdown-button">Tài Khoản &darr;</button>
+            <div class="dropdown-content">
+                <a href="#">Đăng Kí</a>
+                <a href="#">Đăng Nhập</a>
+                <a href="#">Đăng Thoát</a>
+                <a href="#">Sửa</a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<style>
+    /* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_hover */
+   
+
+    nav ul li button {
+        background-color: #04AA6D;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+    }
+
+    nav ul li
+    {
+        /* dàn hàng ngang các phần tử bên trong danh sách menu */
+        position: relative;
+        display: inline-block;
+    }
+
+    nav ul li:hover div {
+        display: block;
+    }
+
+    nav ul li:hover button {
+        background-color: #3e8e41;
+    }
+
+    .dropdown-content, nav ul li div {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a, nav ul li div a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-button {
+        background-color: #04AA6D;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropdown-button {
+        background-color: #3e8e41;
+    }
+
+</style>
